@@ -51,25 +51,25 @@ public class Ventana extends JFrame implements ActionListener {
     }
 
     public void creaComponentes() {
-        btn1 = new JButton("Cifrar Archivo");
+        btn1 = new JButton("Encrypt File");
         btn1.setBounds(50, 50, 350, 100);
         btn1.setBackground(new Color(160, 205, 240));
         btn1.setForeground(new Color(40, 40, 40));
-        btn1.setFont(new Font("arial", 1, 20));
+        btn1.setFont(new Font("arial", 1, 22));
         panel.add(btn1);
 
-        btn2 = new JButton("Descifrar Archivo");
+        btn2 = new JButton("Decrypt File");
         btn2.setBounds(50, 200, 350, 100);
         btn2.setBackground(new Color(160, 205, 240));
         btn2.setForeground(new Color(40, 40, 40));
-        btn2.setFont(new Font("arial", 1, 20));
+        btn2.setFont(new Font("arial", 1, 22));
         panel.add(btn2);
 
-        btn3 = new JButton("Ver Clave Publica");
+        btn3 = new JButton("Show Public Key");
         btn3.setBounds(50, 350, 350, 100);
         btn3.setBackground(new Color(160, 205, 240));
         btn3.setForeground(new Color(40, 40, 40));
-        btn3.setFont(new Font("arial", 1, 20));
+        btn3.setFont(new Font("arial", 1, 22));
         panel.add(btn3);
 
         jtf_NombreArchivo = new JTextField();
