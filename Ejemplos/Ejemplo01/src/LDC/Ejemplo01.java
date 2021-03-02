@@ -25,12 +25,12 @@ public class Ejemplo01 {
         PrivateKey privateKey = keyPair.getPrivate();
 
         // Se salva y recupera de fichero la clave publica
-        saveKey(publicKey, "publickey.dat");
-        publicKey = loadPublicKey("publickey.dat");
+        saveKey(publicKey, "publickey.txt");
+        publicKey = loadPublicKey("publickey.txt");
 
-        // Se salva y recupera de fichero la clave privada
-        saveKey(privateKey, "privatekey.dat");
-        privateKey = loadPrivateKey("privatekey.dat");
+        // Se salva y recupera de fichero la clave privada        
+        saveKey(privateKey, "privatekey.txt");
+        privateKey = loadPrivateKey("privatekey.txt");
 
         // Obtener la clase para encriptar/desencriptar
         rsa = Cipher.getInstance("RSA/ECB/PKCS1Padding");
